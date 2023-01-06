@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nodeapp
+  name: app
   labels:
-    app: nodeapp
+    app: app
 spec:
   containers:
-    - name: javahometech
-      image: likithreddysiddala/javahometech:v1
+    - name: likith
+      image: likithreddysiddala/app:v1
       ports:
         - containerPort: 8080
