@@ -22,7 +22,7 @@
     - name: Start the container
       docker_container:
         name: likith
-        image: "likithreddysiddala/project:{{DOCKER_TAG}}"
+        image: "likithreddysiddala/nodeapp:{{DOCKER_TAG}}"
         state: started
         published_ports:
           - 0.0.0.0:8080:8080
