@@ -1,4 +1,4 @@
-FROM tomcat:8
+FROM nginx
 # Take the war and copy to webapps of tomcat
-COPY target/*.war /opt/apache-tomcat-9.0.78/webapps
+COPY /var/lib/jenkins/workspace/pipeline/target/index.html /var/www/html
 
