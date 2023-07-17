@@ -1,5 +1,5 @@
 ---
-- hosts: dev
+- hosts: all
   become: True
   tasks:
     - name: Install python pip
@@ -22,7 +22,7 @@
     - name: Start the container
       docker_container:
         name: likith
-        image: "likithreddysiddala/nodeapp:{{DOCKER_TAG}}"
+        image: "likithreddysiddala/app99:{{DOCKER_TAG}}"
         state: started
         published_ports:
-          - 0.0.0.0:8080:8080
+          - 0.0.0.0:8081:8080
